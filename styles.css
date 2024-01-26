@@ -47,11 +47,24 @@ article
 
 iframe
 {
-	display: inline-block;
+	align-self: flex-start;
+	display: flex;
 	margin-right:auto;
 	margin-left: auto;
-	width: 800px;
-	height: 800px;
+	width: 36em;
+	height: 28em;
+	object-fit: cover;
+}
+
+object
+{
+	align-self: flex-start;
+	display: flex;
+	margin-right:auto;
+	margin-left: auto;
+	width: min-content;
+	height: 28em;
+	object-fit: cover;
 }
 
 img#cycle
@@ -123,6 +136,7 @@ article > div.article_content
 div.article_gallery
 {
 	position: relative;
+	display: flex;
 	max-width: 48rem;
 	margin: 0 auto;
 }
@@ -131,6 +145,7 @@ article > div.article_gallery
 {
 	display: flex;
 	padding: 10px;
+	width: min-content;
     border: 5px solid var(--high_contrastR);
     border-radius: 8px;
     box-shadow: -25px 20px 35px rgba(0,0,0,0.3);
