@@ -45,6 +45,15 @@ article
 	margin: 0px 5% 0px 5%;
 }
 
+iframe
+{
+	display: inline-block;
+	margin-right:auto;
+	margin-left: auto;
+	width: 400px;
+	height: 400px;
+}
+
 img#cycle
 {
 	animation-name: rotateCirc;
