@@ -39,10 +39,23 @@ h3, h4
 	display: inline-block;
 }
 
-article
+@media (prefers-reduced-motion: no-preference)
 {
-	height: 600px;
-	margin: 0px 5% 0px 5%;
+	article
+	{
+		height: 400px;
+		margin: 0px 5% 0px 5%;
+		animation: fade-in linear forwards;
+		animation-timeline: view();
+		animation-range-start: 200px;
+		animation-range-end: 700px;
+	}
+
+	@keyframes fade-in
+	{
+		from {scale: 0.9; opacity: 0;}
+		to {scale: 1; opacity: 1;}
+	}
 }
 
 iframe
